@@ -28,7 +28,10 @@
 {% endif %}
 
 <header>
-  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
+  <a href="{{ "/" | relative_url }}" class="title">
+    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Site Logo" class="site-logo">
+    {{ site.title | escape }}
+  </a>
   {% include menu.html menu=pages %}
 </header>
 
